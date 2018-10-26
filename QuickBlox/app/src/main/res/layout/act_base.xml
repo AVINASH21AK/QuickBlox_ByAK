@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_FullContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_baseToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_size"
+                android:elevation="@dimen/size_3"
+                android:gravity="center_vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+
+                        android:ellipsize="end"
+                        android:maxLines="1"
+
+                        android:text=""
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/size_16" />
+
+                    <View
+                        android:layout_width="@dimen/size_50"
+                        android:layout_height="@dimen/size_3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/size_10"
+                        android:background="@color/colorPrimary"/>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_SubMainContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

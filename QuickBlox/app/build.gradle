@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.quickblox"
+        minSdkVersion 19
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:design:$rootProject.version_28_0_0"
+    implementation "com.android.support:appcompat-v7:$rootProject.version_28_0_0"
+
+
+    // multi dex error resolve
+    implementation 'com.android.support:multidex:1.0.1'
+
+    //recycleview
+    implementation "com.android.support:recyclerview-v7:$rootProject.version_28_0_0"
+
+    //carview
+    implementation "com.android.support:cardview-v7:$rootProject.version_28_0_0"
+
+    //Imageviewer
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //butterknife - BindView
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //SharedPreference - Hawk
+    implementation "com.orhanobut:hawk:2.0.1"
+
+    //Circualr imageview
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+
+    //viewpager indicator
+    implementation 'com.romandanylyk:pageindicatorview:1.0.0'
+
+    //Image cropper
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.3.+'
+
+    //set fonts
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+
+
+    //Quickblox
+    implementation 'com.quickblox:quickblox-android-sdk-core:3.3.0'
+    implementation 'com.quickblox:quickblox-android-sdk-chat:3.3.0'
+    implementation 'com.quickblox:quickblox-android-sdk-content:3.3.0'
+
+
+}

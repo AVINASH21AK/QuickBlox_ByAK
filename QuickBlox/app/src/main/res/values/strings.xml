@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">QuickBlox</string>
+
+    <string name="header_Home">Home</string>
+
+
+
+    <!--Hint-->
+    <string name="hintName">Name</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintRegisterEmail">Registered Email</string>
+    <string name="hintPassword">Password</string>
+    <string name="hintCurrentPass">Current Password</string>
+    <string name="hintNewPass">New Password</string>
+    <string name="hintRetypePass">Retype New Password</string>
+    <string name="hintBirthdate">Birthdate</string>
+    <string name="hintGender">Gender</string>
+    <string name="hintSubmit">Submit</string>
+    <string name="hintGoBack">Go Back</string>
+    <string name="hintLogout">Logout</string>
+    <string name="hintCancel">Cancel</string>
+    <string name="hintWishToAttent">I wish to attend</string>
+    <string name="hintHaveQuestion">I have a question</string>
+    <string name="hintSubject">Subject</string>
+    <string name="hintYourQue">Your Question</string>
+</resources>
